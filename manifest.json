@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Test Extension",
+  "description": "This extension will replace text. Muhaha.",
+  "version": "1.0",
+
+// Describe what you plan to do. Documentation for content scripts: https://developer.chrome.com/extensions/content_scripts
+// content scrips is what's needed to run on all pages after the dom loads.
+
+  "content_scripts": [
+     {
+       "matches": ["<all_urls>"], //  see for more patters: https://developer.chrome.com/extensions/match_patterns
+       "js": ["jquery.js", "main.js"] // download jquery
+     }
+   ],
+
+
+  "browser_action": {
+   "default_icon": "icon.png", // 19x19 png
+   "default_popup": "popup.html" // html that shows when the extension is clicked
+  }
+
+}
