@@ -1,7 +1,12 @@
 $(document).ready(function(){
-  $('h2').text("tacos");
+  // $('h2').text("tacos");
 
-  $( "#zorro_button" ).click(function() {
-    alert("i like tacos" );
+
+  $( "img" ).each(function() {
+    $(this).attr("src", "https://placekitten.com/"+this.width+'/'+this.height);
   });
-})
+
+  $("#zorro_button").click(function() {
+  });
+});
+
