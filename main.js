@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  // $('h2').text("tacos");
-
 
   $( "img" ).each(function() {
     $(this).attr("src", "https://placekitten.com/"+this.width+'/'+this.height);
