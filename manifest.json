@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Test Extension",
-  "description": "This extension will replace text. Muhaha.",
+  "name": "Hide Twitter Trends",
+  "description": "This extension will hide Trends on Twitter",
   "version": "1.0",
 
 // Describe what you plan to do. Documentation for content scripts: https://developer.chrome.com/extensions/content_scripts
@@ -10,7 +10,7 @@
 
   "content_scripts": [
      {
-       "matches": ["<all_urls>"], //  see for more patters: https://developer.chrome.com/extensions/match_patterns
+       "matches": ["https://twitter.com/"], //  see for more patters: https://developer.chrome.com/extensions/match_patterns
        "js": ["jquery.js", "main.js"] // download jquery
      }
    ],

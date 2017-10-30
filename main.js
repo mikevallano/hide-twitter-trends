@@ -1,10 +1,8 @@
 $(document).ready(function(){
 
-  $( "img" ).each(function() {
-    $(this).attr("src", "https://placekitten.com/"+this.width+'/'+this.height);
-  });
+  $('.trends').hide()
 
-  $("#zorro_button").click(function() {
+  $("#hide_trends_button").click(function() {
   });
 });
 
