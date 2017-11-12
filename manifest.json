@@ -10,7 +10,7 @@
 
   "content_scripts": [
      {
-       "matches": ["https://twitter.com/"], //  see for more patters: https://developer.chrome.com/extensions/match_patterns
+       "matches": ["https://twitter.com/*"], //  see for more patters: https://developer.chrome.com/extensions/match_patterns
        "js": ["jquery.js", "main.js"] // download jquery
      }
    ],
